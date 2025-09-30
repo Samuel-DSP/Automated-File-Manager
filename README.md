@@ -18,13 +18,13 @@ Automated File Organiser is a Python-based tool that monitors your directories i
 
 
 # Configuration
-Edit 'config.yaml' to set:
-'sources – List of directories to monitor.
-'destinations – Map categories to destination folders.
-'categories – File extensions for each category.
-'archive_after_days' – Optional archiving delay.
-'db_path' – Path to SQLite database.
-'scan_recursive' – Set to 'true' to monitor subdirectories.
+Edit `config.yaml` to set:
+  - `sources` – List of directories to monitor.
+  - `destinations` – Map categories to destination folders.
+  - `categories` – File extensions for each category.
+  - `archive_after_days` – Optional archiving delay.
+  - `db_path` – Path to SQLite database.
+  - `scan_recursive` – Set to `true` to monitor subdirectories.
 
 Example:
 <pre>yaml 
@@ -49,8 +49,8 @@ scan_recursive: true
 # Usage
 Run the file organiser with:
 <pre>python cli.py</pre>
-- It will monitor your sources folder(s) and move files automatically.
+- It will monitor your `sources` folders and move files automatically.
 - Open the Flask dashboard at http://127.0.0.1:5000 to see:
   - /health – API status
   - /recent – Last 10 moved files
-/stats – File counts per category
+  - /stats – File counts per category
