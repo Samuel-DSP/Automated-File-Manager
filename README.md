@@ -1,5 +1,5 @@
 # Automated-File-Manager
-Automated File Organiser is a Python-based tool that monitors your directories in real-time and automatically organizes downloaded files into categories. It provides a Flask API to view recent file activity and category statistics, backed by SQLite.
+Automated File Manager is a Python-based tool that monitors your directories in real-time and automatically organises downloaded files into categories. It provides a Flask API to view recent file activity and category statistics, backed by SQLite.
 
 # Features
 
@@ -86,3 +86,9 @@ Logs are printed to the console with timestamps for all file movements:
 2025-09-26 18:36:54 - Moving C:/Users/username/Downloads/file.jpg → C:/Users/username/Desktop/Downloaded Images/file.jpg
 2025-09-26 18:36:54 - Moved file.jpg → Images
 </pre>
+
+# Contributing
+Contributions are welcome in future! Please feel free to submit a Pull Request if you are interested or find something interesting to contribute
+
+# License
+This project is licensed under the GNU General Public License v3.0
