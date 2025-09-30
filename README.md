@@ -12,7 +12,7 @@ Automated File Organiser is a Python-based tool that monitors your directories i
 
 # Installation
 1. Clone the repository
-<pre>git clone '://github.com/Samuel_DSP/Automated-File-Organiser.git
+<pre>git clone '://github.com/Samuel_DSP/Automated-File-Organiser.git</pre>
 2. Install dependencies
 <pre>pip install -r requirements.txt</pre>
 
