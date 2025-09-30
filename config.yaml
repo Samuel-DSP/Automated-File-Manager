@@ -1,0 +1,22 @@
+sources:
+  - C:/Users/samue/Downloads
+
+destinations:
+  Images: C:/Users/samue/OneDrive/Desktop/Downloaded Images
+  Videos: C:/Users/samue/OneDrive/Desktop/Downloaded Videos
+  Music: C:/Users/samue/OneDrive/Desktop/Downloaded Music
+  SFX: C:/Users/samue/OneDrive/Desktop/Downloaded Sound Effects
+  Gifs: C:/Users/samue/OneDrive/Desktop/Downloaded Gifs
+  Documents: C:/Users/samue/OneDrive/Desktop/Downloaded Documents
+
+categories:
+  Images: [".jpg", ".jpeg", ".png", ".webp", ".tiff", ".bmp", ".svg", ".ico", ".psd", ".raw", ".heic", ".ai", ".eps"]
+  Gifs: [".gif", ".gifs", ".giff"]
+  Videos: [".webm", ".mpg", ".mpeg", ".mp4", ".avi", ".wmv", ".mov", ".flv", ".avchd"]
+  Music: [".m4a", ".flac", "mp3", ".wav", ".wma", ".aac"]
+  SFX: [".ogg, .opus"]
+  Documents: [".doc", ".docx", ".odt", ".pdf", ".xls", ".xlsx", ".ppt", ".pptx"]
+
+archive_after_days: 30
+db_path: ./filemanager.db
+scan_recursive: true

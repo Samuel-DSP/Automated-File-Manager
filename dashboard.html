@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Manager API Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>File Manager API Dashboard</h1>
+
+    <p>API Endpoints:</p>
+    <ul>
+        <li><a href="/health">/health</a></li>
+        <li><a href="/recent">/recent</a></li>
+        <li><a href="/stats">/stats</a></li>
+    </ul>
+
+    <h2>Recent Files</h2>
+    <table>
+        <tr>
+            <th>Filename</th>
+            <th>Category</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Moved At</th>
+        </tr>
+        {% for log in recent_logs %}
+        <tr>
+            <td>{{ log.filename }}</td>
+            <td>{{ log.category }}</td>
+            <td>{{ log.src }}</td>
+            <td>{{ log.dest }}</td>
+            <td>{{ log.pretty_time }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Stats</h2>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Count</th>
+        </tr>
+        {% for cat, count in stats_counts.items() %}
+        <tr>
+            <td>{{ cat }}</td>
+            <td>{{ count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
