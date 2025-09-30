@@ -11,10 +11,22 @@ Automated File Organiser is a Python-based tool that monitors your directories i
   - **Portable Configuration**: YAML file allows flexible setup across different environments.
 
 # Installation
-
+1. Clone the repository
+<pre>git clone '://github.com/Samuel_DSP/Automated-File-Organiser.git
+2. Install dependencies
+<pre>pip install -r requirements.txt</pre>
 
 
 # Configuration
+Edit 'config.yaml' to set:
+'sources – List of directories to monitor.
+'destinations – Map categories to destination folders.
+'categories – File extensions for each category.
+'archive_after_days' – Optional archiving delay.
+'db_path' – Path to SQLite database.
+'scan_recursive' – Set to 'true' to monitor subdirectories.
+
+Example:
 <pre>yaml 
   sources:
   - C:/Users/username/Downloads
