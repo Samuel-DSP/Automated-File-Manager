@@ -1,24 +1,3 @@
-# from sqlalchemy import create_engine, Column, Integer, String, DateTime
-# from sqlalchemy.orm import declarative_base, sessionmaker
-# from datetime import datetime, timezone
-
-# Base = declarative_base()
-
-# class FileLog(Base):
-#     __tablename__ = "file_logs"
-#     id = Column(Integer, primary_key=True)
-#     filename = Column(String)
-#     src = Column(String)
-#     dest = Column(String)
-#     category = Column(String)
-#     moved_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
-
-# def init_db(db_path: str):
-#     engine = create_engine(f"sqlite:///{db_path}")
-#     Base.metadata.create_all(engine)
-#     return sessionmaker(bind=engine)
-
-
 from sqlalchemy import create_engine, Column, Integer, String, DateTime
 from sqlalchemy.orm import declarative_base, sessionmaker
 from datetime import datetime, timezone
